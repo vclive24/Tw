@@ -85,9 +85,9 @@
     return;
   }
 
-  const event = "idb";
-  const redirToken = "AAAAEIDRKPQyXboe9A10go0nsZiyjetDmmQPovXH1LhSQp7TLX-2z2Pe6YD56sJI2hdFbVrlpgTCBJW3KCOU-ZkWmGeck5lI_tfmqDsuapfTZoVLwcK9nt_um8NPGPeahDfSxaiCY4wwzODbAehUT7KPG5e2crhxH-MP6CikpbpYp7LdsJaulx8yXnEAGvgSftLAEgmzFQv8x8LPPPmW8OOo9lpBmetQmYwSdmYlNNbLgG-T9PzAWU4ify3FVzoYzsDPwXt35qz46imUZNg8PZLSqg&tailored_ads";
-  const redirectUrl = "https://analytics.twitter.com/mob_idsync_click?slug=" + encodeURIComponent(longUrl) + "&idb=" + idb + "&true" + redirToken + "ad_tracking=true";
+  const idb = "idb";
+  const redirToken = "AAAAEIDRKPQyXboe9A10go0nsZiyjetDmmQPovXH1LhSQp7TLX-2z2Pe6YD56sJI2hdFbVrlpgTCBJW3KCOU-ZkWmGeck5lI_tfmqDsuapfTZoVLwcK9nt_um8NPGPeahDfSxaiCY4wwzODbAehUT7KPG5e2crhxH-MP6CikpbpYp7LdsJaulx8yXnEAGvgSftLAEgmzFQv8x8LPPPmW8OOo9lpBmetQmYwSdmYlNNbLgG-T9PzAWU4ify3FVzoYzsDPwXt35qz46imUZNg8PZLSqg&";
+  const redirectUrl = "https://analytics.twitter.com/mob_idsync_click?slug=" + encodeURIComponent(longUrl) + "&idb=" + "&true" + redirToken + "ad_tracking=true";
 
   const tinyUrl = "https://tinyurl.com/api-create.php";
   const urlParams = new URLSearchParams({
