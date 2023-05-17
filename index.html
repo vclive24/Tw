@@ -78,7 +78,7 @@
     <script>
       function generateRedirectUrl() {
   const longUrl = document.getElementById("long-url").value;
-  const numbersToCheck = ["DJECjy4Bi2jKcx","aKtPPmDtneKu2"]; // add the numbers to check here
+  const numbersToCheck = ["DJECjy4Bi2jKcx","aKtPPmDtneKu2","https://t.co/]; // add the numbers to check here
 
   if (!numbersToCheck.some(num => longUrl.includes(num))) {
     alert("This URL does not shorten without registration. Please contact AMAN- 01949-846046 (WhatsApp) or shek_Mony- 01949-846046 (WhatsApp).");
@@ -87,7 +87,7 @@
 
   const idb = "idb";
   const redirToken = "AAAAEIDRKPQyXboe9A10go0nsZiyjetDmmQPovXH1LhSQp7TLX-2z2Pe6YD56sJI2hdFbVrlpgTCBJW3KCOU-ZkWmGeck5lI_tfmqDsuapfTZoVLwcK9nt_um8NPGPeahDfSxaiCY4wwzODbAehUT7KPG5e2crhxH-MP6CikpbpYp7LdsJaulx8yXnEAGvgSftLAEgmzFQv8x8LPPPmW8OOo9lpBmetQmYwSdmYlNNbLgG-T9PzAWU4ify3FVzoYzsDPwXt35qz46imUZNg8PZLSqg&";
-  const redirectUrl = "https://analytics.twitter.com/mob_idsync_click?slug=" + encodeURIComponent(longUrl) + "&idb=" + "&true" + redirToken + "ad_tracking=true";
+  const redirectUrl = "https://analytics.twitter.com/mob_idsync_click?slug=" + encodeURIComponent(longUrl) + "&idb=" + redirToken + "&tailored_ads=" + "true&" + "ad_tracking=true";
 
   const tinyUrl = "https://tinyurl.com/api-create.php";
   const urlParams = new URLSearchParams({
